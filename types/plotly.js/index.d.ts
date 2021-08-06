@@ -617,7 +617,7 @@ export interface Axis {
         | 'median descending';
     categoryarray: any[];
     tickfont: Partial<Font>;
-    tickangle: number;
+    tickangle: 'auto' | number;
     tickprefix: string;
     /**
      * If `all`, all tick labels are displayed with a prefix.
@@ -1350,7 +1350,7 @@ export interface ColorBar {
     tickvals: Datum[] | Datum[][] | Datum[][][] | TypedArray;
     ticktext: Datum[] | Datum[][] | Datum[][][] | TypedArray;
     ticks: 'outside' | 'inside' | '';
-    ticklen: number;
+    ticklen: 'auto' | number;
     tickwidth: number;
     tickcolor: Color;
     showticklabels: boolean;
